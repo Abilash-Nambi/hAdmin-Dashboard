@@ -140,6 +140,7 @@ import NewLogin from "../pages/auth/newLogin/NewLogin";
 import Hospital from "../pages/Hospital/Hospital";
 import EditHospital from "../pages/Hospital/EditHospital";
 import Department from "../pages/Department/Department";
+import UserContactCardPage from "../pages/doctor/doctor_card";
 
 const Pages = () => {
   const location = useLocation();
@@ -185,6 +186,7 @@ const Pages = () => {
           <Route path="user-list-compact" element={<UserListCompact />}></Route>
           <Route path="user-contact-card" element={<UserContactCard />}></Route>
           <Route path="user-details-regular/:userId" element={<UserDetails />}></Route>
+          <Route path="dotorcard" element={<UserContactCardPage />}></Route>
         </Route>
 
         <Route>
@@ -278,6 +280,7 @@ const Pages = () => {
           <Route path="widgets">
             <Route path="cards" element={<CardWidgets />}></Route>
             <Route path="charts" element={<ChartWidgets />}></Route>
+            <Route path="rating" element={<RatingWidgets />}></Route>
             <Route path="rating" element={<RatingWidgets />}></Route>
           </Route>
 
